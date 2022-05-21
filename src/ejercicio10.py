@@ -30,8 +30,7 @@ def es_palindromo(texto, texto_plano):
         
     if texto_comparado == texto_plano:
         return "es palindromo"
-    else:
-        return "no es palindromo"
+    return "no es palindromo"
          
 def principal():
     # entrada
