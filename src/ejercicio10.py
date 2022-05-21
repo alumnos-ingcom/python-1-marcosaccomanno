@@ -43,7 +43,7 @@ def principal():
     resultado = es_palindromo(texto_ingresado, texto_plano)
     
     # salida
-    # Se imrpime si es o no es palindromo
+    # Se imprime si es o no es palindromo
     print(f"'{texto_ingresado}' {resultado}.")
     
 if __name__ == "__main__":
