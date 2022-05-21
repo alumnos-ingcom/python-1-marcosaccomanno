@@ -34,16 +34,16 @@ def es_palindromo(texto, texto_plano):
          
 def principal():
     # entrada
-    ''' Se solicita al usuario el ingreso de una palabra o frase '''
+    # Se solicita al usuario el ingreso de una palabra o frase
     texto_ingresado = input("Texto: ")
     
     # algoritmo
-    ''' Se aplana el texto y se verifica si es palindromo '''
+    # Se aplana el texto y se verifica si es palindromo
     texto_plano = aplanar_texto(texto_ingresado)
     resultado = es_palindromo(texto_ingresado, texto_plano)
     
     # salida
-    ''' Se imrpime si es o no es palindromo '''
+    # Se imrpime si es o no es palindromo
     print(f"'{texto_ingresado}' {resultado}.")
     
 if __name__ == "__main__":
