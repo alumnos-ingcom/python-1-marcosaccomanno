@@ -33,6 +33,7 @@ def es_palindromo(texto, texto_plano):
     return "no es palindromo"
          
 def principal():
+    '''Funcion principal'''
     # entrada
     # Se solicita al usuario el ingreso de una palabra o frase
     texto_ingresado = input("Texto: ")

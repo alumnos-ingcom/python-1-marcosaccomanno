@@ -33,6 +33,7 @@ def convertir_a_centigrados(fahrenheit):
 
 
 def principal():
+    ''' Funcion principal '''
     # entrada
     # Se solicita al usuario el ingreso de una temperatura en en °C y otra en °F.
     centigrados = float(input("Centigrados: "))
