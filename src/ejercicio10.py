@@ -15,7 +15,6 @@ def aplanar_texto(texto):
     '''
     return texto.lower().replace(" ", "")
 
-    
 def es_palindromo(texto, texto_plano):
     '''
     Esta funcion toma como entrada texto_plano que retorna la funcion aplanar_texto().
@@ -33,8 +32,7 @@ def es_palindromo(texto, texto_plano):
         return "es palindromo"
     else:
         return "no es palindromo"
-        
-        
+         
 def principal():
     # entrada
     ''' Se solicita al usuario el ingreso de una palabra o frase '''
@@ -49,6 +47,5 @@ def principal():
     ''' Se imrpime si es o no es palindromo '''
     print(f"'{texto_ingresado}' {resultado}.")
     
-
 if __name__ == "__main__":
     principal()
