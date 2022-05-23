@@ -4,7 +4,7 @@
 ################
 
 '''
-Precondiciones: La entrada debe ser un numero real. Puede ser entero, decimal, positivo, negativo o cero.
+Precondiciones: La entrada debe ser un numero real.
 
 Poscondiciones: La salida es un string "neutro", "positivo" o "negativo".
 '''
@@ -21,8 +21,8 @@ def signo(numero):
         # si a un numero positivo se le suma ese mismo numero, siempre sera mayor que si mismo.
         return "positivo"
     elif numero + numero < numero:
-        # si a un numero negativo se le suma ese mismo numero sera igual que hacer una resta, por lo tanto el resultado
-        # sera menor que si mismo.
+        # si a un numero negativo se le suma ese mismo numero sera igual que hacer una resta, 
+        # por lo tanto el resultado sera menor que si mismo.
         return "negativo"
 
 def principal():
