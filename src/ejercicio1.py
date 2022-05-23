@@ -11,7 +11,6 @@ Poscondiciones: La salida debe ser tambien un numero real, resultado de la conve
 de centigrados a fahrenheit (°C * 1.80 + 32) o de fahrenheit a centigrados ((°F - 32) / 1.80).
 '''
 
-
 def convertir_a_fahrenheit(centigrados):
     '''
     Esta funcion toma como entrada una temperatura
@@ -20,7 +19,6 @@ def convertir_a_fahrenheit(centigrados):
     esperada es tambien un numero decimal.
     '''
     return centigrados * 1.80 + 32
-    
 
 def convertir_a_centigrados(fahrenheit):
     '''
@@ -31,14 +29,13 @@ def convertir_a_centigrados(fahrenheit):
     '''
     return (fahrenheit - 32) / 1.80
 
-
 def principal():
     ''' Funcion principal '''
     # entrada
     # Se solicita al usuario el ingreso de una temperatura en en °C y otra en °F.
     centigrados = float(input("Centigrados: "))
     fahrenheit = float(input("Fahrenheit: "))
-                 
+    
     # algoritmo
     # Se realiza la conversion de °C a °F y de °F a °C.
     fahrenheit_convertido = convertir_a_fahrenheit(centigrados) 
@@ -49,7 +46,6 @@ def principal():
     print(f"{centigrados} °C son {fahrenheit_convertido:.2f} °F")
     print(f"{fahrenheit} °F son {centigrados_convertido:.2f} °C")
     
-
 if __name__ == "__main__":
     principal()
     
