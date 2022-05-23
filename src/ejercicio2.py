@@ -14,16 +14,16 @@ def signo(numero):
     Esta funcion toma como entrada un numero real y devuelve
     el signo del mismo calculandolo mediante sumas (positivo, negativo o neutro). 
     ''' 
-    if numero + numero == numero:
-        # si un numero es 0 y se le suma ese mismo numero, el resultado siempre sera 0.
-        return "neutro"
-    elif numero + numero > numero:
+    if numero + numero > numero:
         # si a un numero positivo se le suma ese mismo numero, siempre sera mayor que si mismo.
-        return "positivo"
+        sgn = "positivo"
     elif numero + numero < numero:
         # si a un numero negativo se le suma ese mismo numero sera igual que hacer una resta, 
         # por lo tanto el resultado sera menor que si mismo.
-        return "negativo"
+        sgn = "negativo"
+    else:
+        sgn = "neutro"
+    return sgn
 
 def principal():
     ''' Funcion principal '''

@@ -29,8 +29,10 @@ def es_palindromo(texto, texto_plano):
         indice -= 1
         
     if texto_comparado == texto_plano:
-        return "es palindromo"
-    return "no es palindromo"
+        respuesta = "es palindromo"
+    else:
+        respuesta = "no es palindromo"
+    return respuesta
          
 def principal():
     '''Funcion principal'''
