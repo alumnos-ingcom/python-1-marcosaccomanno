@@ -29,10 +29,8 @@ def principal():
     ''' Funcion principal '''
     # entrada
     numero = float(input("Ingrese un numero: "))
-    
     # algoritmo
     signo_numero = signo(numero)
-
     # salida
     print(f"{numero} es {signo_numero}")
     
