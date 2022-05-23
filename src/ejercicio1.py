@@ -35,12 +35,10 @@ def principal():
     # Se solicita al usuario el ingreso de una temperatura en en °C y otra en °F.
     centigrados = float(input("Centigrados: "))
     fahrenheit = float(input("Fahrenheit: "))
-    
     # algoritmo
     # Se realiza la conversion de °C a °F y de °F a °C.
     fahrenheit_convertido = convertir_a_fahrenheit(centigrados) 
     centigrados_convertido = convertir_a_centigrados(fahrenheit)
-    
     # salida
     # Se imprimen las temperaturas convertidas.
     print(f"{centigrados} °C son {fahrenheit_convertido:.2f} °F")
