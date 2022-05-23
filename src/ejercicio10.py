@@ -24,9 +24,11 @@ def es_palindromo(texto, texto_plano):
     '''
     indice = 0
     texto_comparado = ""
-    for letra in texto:
+    largo = len(texto)
+    while largo > 0:
         texto_comparado += texto_plano[indice - 1]
         indice -= 1
+        largo -=1
         
     if texto_comparado == texto_plano:
         respuesta = "es palindromo"
