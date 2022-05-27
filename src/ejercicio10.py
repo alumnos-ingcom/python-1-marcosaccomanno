@@ -6,16 +6,10 @@
 '''
 Precondiciones: La entrada debe ser de tipo string.
 
-Poscondiciones: La salida sera un string "es palindromo" o "no es palindromo".
+Poscondiciones: La salida debe ser un valor booleano (True o False).
 '''
 
-def aplanar_texto(texto):
-    '''
-    Esta funcion toma como entrada una cadena, la convierte a minuscula y elimina los espacios.
-    '''
-    return texto.lower().replace(" ", "")
-
-def es_palindromo(texto, texto_plano):
+def es_palindromo(texto):
     '''
     Esta funcion toma como entrada texto_plano que retorna la funcion aplanar_texto().
     Recorre cada letra de la cadena y la agrega de atras hacia adelante a la variable
@@ -23,6 +17,7 @@ def es_palindromo(texto, texto_plano):
     si es o no es un palindromo.
     '''
     indice = 0
+    texto_plano = texto.lower().replace(" ", "")
     texto_comparado = ""
     largo = len(texto)
     while largo > 0:
@@ -31,23 +26,19 @@ def es_palindromo(texto, texto_plano):
         largo -=1
         
     if texto_comparado == texto_plano:
-        respuesta = "es palindromo"
+        respuesta = True
     else:
-        respuesta = "no es palindromo"
+        respuesta = False
     return respuesta
          
 def principal():
     '''Funcion principal'''
     # entrada
-    # Se solicita al usuario el ingreso de una palabra o frase
     texto_ingresado = input("Texto: ")
     # algoritmo
-    # Se aplana el texto y se verifica si es palindromo
-    texto_plano = aplanar_texto(texto_ingresado)
-    resultado = es_palindromo(texto_ingresado, texto_plano)
+    resultado = es_palindromo(texto_ingresado)
     # salida
-    # Se imprime si es o no es palindromo
-    print(f"'{texto_ingresado}' {resultado}.")
+    print(resultado)
     
 if __name__ == "__main__":
     principal()

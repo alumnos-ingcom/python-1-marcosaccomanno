@@ -4,15 +4,15 @@
 ################
 
 '''
-Precondiciones: Los valores de entrada deben ser dos numeros enteros positivos.
+Precondiciones: Los valores de entrada deben ser dos numeros enteros.
 
-Poscondiciones: La salida es un numero entero positivo resultante de la suma
+Poscondiciones: La salida es un numero entero resultante de la suma
 de ambos numeros de entrada.
 '''
 
 def suma_lenta(numero, otro_numero):
     '''
-    Esta funcion toma como entrada dos numeros enteros positivos y realiza una
+    Esta funcion toma como entrada dos numeros enteros y realiza una
     suma lenta (de +1) hasta llegar al resultado de la suma entre ambos numeros.
     '''
     largo = otro_numero
