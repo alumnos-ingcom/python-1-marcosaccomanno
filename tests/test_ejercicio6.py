@@ -28,7 +28,7 @@ def test_ordenar_menor_a_mayor():
     uno = 7
     dos = 8
     tres = 2
-    resultado = ordenar_mayor_a_menor(uno, dos, tres)
+    resultado = ordenar_menor_a_menor(uno, dos, tres)
     assert isinstance(resultado, tuple), "La salida debe ser una tupla"
     assert resultado == (tres, uno, dos), "Para los numeros 7, 8 y 2 la salida debe ser (2, 7, 8)"
     
