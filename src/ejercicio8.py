@@ -6,7 +6,7 @@
 '''
 Precondiciones: La entrada debe ser un numero entero positivo.
 
-Postcondiciones: La salida debe ser un valor booleano True (en caso de
+Poscondiciones: La salida debe ser un valor booleano True (en caso de
 que el numero sea primo) o False (en caso de que no lo sea).
 '''
 
@@ -28,8 +28,12 @@ def principal():
     '''
     Funcion principal
     '''
+    # Entrada
     numero = int(input("Numero: "))
-    print(es_primo(numero))
+    # Algoritmo
+    resultado = es_primo(numero)
+    # Salida
+    print(resultado)
     
 if __name__ == "__main__":
     principal()
