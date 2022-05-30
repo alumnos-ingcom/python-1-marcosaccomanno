@@ -18,7 +18,6 @@ def suma_lenta(numero, otro_numero):
     largo = otro_numero
     suma = numero
     while largo > 0:
-        print(f"{suma} + 1")
         suma += 1
         largo -= 1
     return suma
