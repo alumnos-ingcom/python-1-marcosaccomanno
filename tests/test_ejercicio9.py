@@ -3,7 +3,7 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-from ejercicio9 import factores_primos
+from src.ejercicio9 import factores_primos
 
 '''
 Los siguientes tests se encargan de probar las funciones del archivo 'ejercicio9.py'
