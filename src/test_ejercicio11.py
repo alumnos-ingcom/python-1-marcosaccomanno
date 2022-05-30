@@ -4,6 +4,7 @@
 ################
 
 from src.ejercicio11 import es_multiplo
+from src.ejercicio5 import division_lenta
 
 '''
 Los siguientes tests se encargan de probar las funciones del archivo 'ejercicio11.py'
