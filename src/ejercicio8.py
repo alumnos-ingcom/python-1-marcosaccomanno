@@ -17,13 +17,15 @@ def es_primo(numero):
     '''
     divisor = 2
     if numero in (1, 2):
-        return True
+        resultado = True
     while divisor < numero:
         if numero % divisor == 0:
-            return False
+            resultado = False
+            break
         divisor += 1
-        return True
-
+        resultado = True
+    return resultado
+    
 def principal():
     '''
     Funcion principal
