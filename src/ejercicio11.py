@@ -22,7 +22,7 @@ def es_multiplo(numero, multiplo):
     Esta funcion toma como entrada dos numeros enteros y devuelve True si
     el segundo es multiplo del primero y False si no lo es
     '''
-    cociente, resto = division_lenta(numero, multiplo)
+    _, resto = division_lenta(numero, multiplo)
     if resto == 0:
         resultado = True
     else:
