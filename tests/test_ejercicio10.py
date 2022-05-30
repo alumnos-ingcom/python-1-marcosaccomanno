@@ -17,7 +17,7 @@ def test_es_palindromo_true():
     texto = "neuquen"
     resultado = es_palindromo(texto)
     assert isinstance(resultado, bool), "El resultado debe ser un valor booleano"
-    assert resultado == True, "Si el texto es palindromo el resultado debe ser True"
+    assert resultado is True, "Si el texto es palindromo el resultado debe ser True"
     
 def test_es_palindromo_false():
     '''
@@ -26,5 +26,5 @@ def test_es_palindromo_false():
     texto = "camion"
     resultado = es_palindromo(texto)
     assert isinstance(resultado, bool), "El resultado debe ser un valor booleano"
-    assert resultado == False, "Si el texto no es palindromo el resultado debe ser False"    
+    assert resultado is False, "Si el texto no es palindromo el resultado debe ser False"    
     

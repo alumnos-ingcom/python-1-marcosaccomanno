@@ -3,6 +3,8 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
+from src.ejercicio5 import division_lenta
+
 '''
 Precondiciones: La entrada deben ser dos numeros enteros.
 
@@ -14,8 +16,6 @@ multiplo del primero, y False si no lo es.
 Para el funcionamiento de la funcion 'es_multiplo' se importa la funcion
 'division_lenta' creada en el ejercicio 5 ubicado en 'src'.
 '''
-
-from src.ejercicio5 import division_lenta
 
 def es_multiplo(numero, multiplo):
     '''
