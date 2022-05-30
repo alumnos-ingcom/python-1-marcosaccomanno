@@ -3,7 +3,7 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-from ejercicio5 import division_lenta
+from src.ejercicio5 import division_lenta
 
 '''
 Los siguientes tests se encargan de probar las funciones del archivo 'ejercicio5.py'
