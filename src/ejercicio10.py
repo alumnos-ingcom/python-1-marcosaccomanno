@@ -24,13 +24,9 @@ def es_palindromo(texto):
         texto_comparado += texto_plano[indice - 1]
         indice -= 1
         largo -=1
-        
-    if texto_comparado == texto_plano:
-        respuesta = True
-    else:
-        respuesta = False
-    return respuesta
-         
+    resultado = texto_comparado == texto_plano
+    return resultado
+    
 def principal():
     '''Funcion principal'''
     # entrada

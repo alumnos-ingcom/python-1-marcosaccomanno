@@ -23,10 +23,7 @@ def es_multiplo(numero, multiplo):
     el segundo es multiplo del primero y False si no lo es
     '''
     _, resto = division_lenta(numero, multiplo)
-    if resto == 0:
-        resultado = True
-    else:
-        resultado = False
+    resultado = resto == 0
     return resultado
 
 def principal():
