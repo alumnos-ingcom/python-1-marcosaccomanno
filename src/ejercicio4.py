@@ -15,11 +15,15 @@ def suma_lenta(numero, otro_numero):
     Esta funcion toma como entrada dos numeros enteros y realiza una
     suma lenta (de +1) hasta llegar al resultado de la suma entre ambos numeros.
     '''
-    largo = otro_numero
+    largo = abs(otro_numero)
     suma = numero
     while largo > 0:
-        suma += 1
-        largo -= 1
+        if otro_numero > 0:
+            suma += 1
+            largo -= 1
+        elif otro_numero < 0:
+            suma -= 1
+            largo -= 1
     return suma
     
 def principal():
